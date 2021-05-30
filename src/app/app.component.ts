@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'byteback';
+
+  transferir($event: any) {
+    console.log($event);
+
+  }
 }
