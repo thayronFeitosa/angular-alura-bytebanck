@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'byteback';
 
-  transferir($event: any) {
-    console.log($event);
+  destino: number = 0;
+  valor: number = 0;
 
+  transferir($event: any) {
+    const { destino, valor } = $event;
+    this.destino = destino;
+    this.valor = valor;
   }
 }
